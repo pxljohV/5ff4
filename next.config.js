@@ -13,11 +13,7 @@ const nextConfig = {
     APP_ID: process.env.APP_ID,
     MEASUREMENT_ID: process.env.MEASUREMENT_ID
   },
-  rules: {
-    "@next/next/no-img-element": "off",
-   },
     images: {
-      unoptimized: true,
       domains:["www.udrop.com"],
       remotePatterns: [
         {
