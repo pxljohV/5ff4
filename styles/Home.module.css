@@ -1,0 +1,64 @@
+.border_5ff{
+  border-bottom:solid 1px  #ffffff67;;
+  box-shadow: inset 0px -8px 8px -4px  #e7094c;;
+  background-color: rgba(70, 29, 48, 0);
+
+}
+
+.color_5ff{
+  color: #e7094c;;
+}
+.bg_5ff{
+  background-color: #e7094c;;
+}
+
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .bannerBg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 500px;
+    background-position-x: 50%;
+  }
+}
+.n-container {
+  justify-content: center;
+  background-color: red;
+}
+
+@media (prefers-color-scheme: dark) {
+  .card,
+  .footer {
+    border-color: #222;
+  }
+  .code {
+    background: #111;
+  }
+  .logo img {
+    filter: invert(1);
+  }
+}
+
+.playerWrapper {
+  width: 100%;
+  max-width: 1000px;
+  height: 400px;
+}
+
+
+
+@media (max-width: 768px) {
+  .playerWrapper {
+    width: 100%;
+    height: auto;
+  }
+  .presskit {
+    width: 100%;
+    height: auto;
+  }
+}
