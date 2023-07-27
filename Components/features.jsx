@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Image from 'next/image'
 import bg from './assets/bg-2.gif'
 
 import { useState, useEffect } from 'react'
@@ -25,7 +25,7 @@ export default function Features() {
             <h2 className="ma0 f1 mb4 ph4">Features</h2>
             <div className="container relative o-80">
                 <div className="">
-                    <img
+                    <Image
                         src={bg}
                         alt="5 force fighters banner"
                         layout="fill"
@@ -39,7 +39,7 @@ export default function Features() {
                     <div className="fl    black bg-black-40 w-tl  b--white flex w-100 white flex items-center flex-wrap ">
                         <div className=" w-50-l w-100 flex items-center">
                             <div className="container-1 bg-black w-100 ma0 br4 flex items-center">
-                                <img src={"https://www.udrop.com/cache/plugins/filepreviewer/1061049/d5d9c5bad0fad68062439282241f073f0d1358bb95fb3305a695a528f0bfc617/1100x800_cropped.gif"} 
+                                <Image src={"https://www.udrop.com/cache/plugins/filepreviewer/1061049/d5d9c5bad0fad68062439282241f073f0d1358bb95fb3305a695a528f0bfc617/1100x800_cropped.gif"} 
                                 width={500} height={500} unoptimized={true} alt="" style={{width:"100%", height:"auto"}}/>
                             </div>
                         </div>
@@ -58,13 +58,13 @@ export default function Features() {
                         </div>
 
                         <div className="container-3 bg-black w-50-l w-100 mt0-l mt4 flex items-center">
-                            <img src={"https://www.udrop.com/cache/plugins/filepreviewer/1061048/53b647f2c962d1b76743748fac758a72cf4efc5fd89fc7bd6ef6efe27ce88a35/1100x800_cropped.gif"}
+                            <Image src={"https://www.udrop.com/cache/plugins/filepreviewer/1061048/53b647f2c962d1b76743748fac758a72cf4efc5fd89fc7bd6ef6efe27ce88a35/1100x800_cropped.gif"}
                             width={500} height={500} unoptimized={true} alt="" style={{width:"100%", height:"auto"}}/> 
                         </div>
                     </div>
                     <div className="fl bg-black-40   black  tl  b--white flex white flex items-center flex-wrap ">
                         <div className="container-2 bg-black w-50-l w-100 flex items-center">
-                            <img src={"https://www.udrop.com/cache/plugins/filepreviewer/1061044/dbc286b76f962ce140736cdf5096d3c740e702213acae64712bcd23fccdf21eb/1100x800_cropped.gif"} 
+                            <Image src={"https://www.udrop.com/cache/plugins/filepreviewer/1061044/dbc286b76f962ce140736cdf5096d3c740e702213acae64712bcd23fccdf21eb/1100x800_cropped.gif"} 
                             width={500} height={500} unoptimized={true} alt="" style={{width:"100%", height:"auto"}}/>
                         </div>
                         <div className="w-50-l w-100">
