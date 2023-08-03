@@ -85,7 +85,7 @@ export default function Characters() {
     return (
         <div className="ma0  ph4 pv4" >
             <div className="ma0 ">
-                <h2 className="ma0 f1">Your rider</h2>
+                <h2 className="ma0 f1 ">Your rider</h2>
                 <div className=" black w-100 white pv4 flex justify-center" >
 
                     <div className="absolute  o-40 ">
@@ -102,15 +102,15 @@ export default function Characters() {
                         />
                     </div>
    
-                    <div className=" w-100  f2-ns f3-m f4 shadow-text relative  pv4-l" ref={desc}>
+                    <div className=" w-100  f2-ns f3-m f4 shadow-text relative  " ref={desc}>
                         <div className="flex flex-wrap items-center  w-100">
                             <div className=" w-100 flex ">
                                 {
                                     chars.map((r, index) => {
                                         return (
-                                            <div key={index} id={index} onClick={getDesc} ref={refsArray[index]} className="center flex  items-center b--white-10 br3 w-30" >
+                                            <div key={index} id={index} onClick={getDesc} ref={refsArray[index]} className="center flex  items-center b--white-10 br3 w-30 grow" >
                                                 <div className={"pointer b--white-20 flex flex-wrap items-center w3 w-100-ns"} >
-                                                    <div className=" ba flex items-center" style={{height:"70%"}}>
+                                                    <div className=" ba flex items-center " style={{height:"70%"}}>
                                                         <Image src={r.icon} alt="character" className="w-auto h-auto" />
                                                     </div>
                                                     <div className="flex items-center w-100 flex justify-center">

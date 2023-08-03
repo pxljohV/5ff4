@@ -13,7 +13,7 @@ export default function PressKit() {
   });
   return (
     <div className="w-100">
-      <div className="container relative">
+      <div className="container relative pv4 ph4">
         <div className="">
           <Image
             src={bg}
