@@ -102,36 +102,42 @@ export default function Characters() {
                         />
                     </div>
    
-                    <div className=" w-100  f2-ns f3-m f4 shadow-text relative ph3 pv4-l" ref={desc}>
+                    <div className=" w-100  f2-ns f3-m f4 shadow-text relative  pv4-l" ref={desc}>
                         <div className="flex flex-wrap items-center  w-100">
                             <div className=" w-100 flex ">
                                 {
                                     chars.map((r, index) => {
                                         return (
-                                            <div key={index} id={index} onClick={getDesc} ref={refsArray[index]} className="center flex bg-black-10 b--white-10 br3 w-30" >
-                                                <div className={"pointer b--white-20"} >
-                                                    <div className=" ">
-                                                        <Image src={r.icon} alt="character" className="w-100 h-auto" />
+                                            <div key={index} id={index} onClick={getDesc} ref={refsArray[index]} className="center flex  items-center b--white-10 br3 w-30" >
+                                                <div className={"pointer b--white-20 flex flex-wrap items-center w3 w-100-ns"} >
+                                                    <div className=" ba flex items-center" style={{height:"70%"}}>
+                                                        <Image src={r.icon} alt="character" className="w-auto h-auto" />
                                                     </div>
+                                                    <div className="flex items-center w-100 flex justify-center">
+                                                    <p className="white tc f3-ns f7 ma0 pa3-ns ">{r.name}</p>
+                                                    </div>
+                                               
+
                                                 </div>
+                                                
                                             </div>
                                         )
                                     })
                                 }
                             </div>
 
-                            <div className="w-100 flex flex-wrap items-center">
+                            <div className="w-100 flex flex-wrap items-center ba bg-black">
+                                
                                 <div className=" w-50-l  w-100 bg-black-70 pa4-l ">
                                     <Image
                                         src={background}
                                         alt="5 force fighters banner"
-
-                                        className="cover h-auto ba br3 b--white "
+                                        className="cover h-auto ba  "
                                         quality={100}
-
                                     />
+                              
                                 </div>
-                                <div className="w-50-l w-100 pa4-l   lh-2 bg-black-70  ">
+                                <div className="w-50-l w-100 pa4-l lh-2 bg-black-70  ba ">
                                     <p className="f3-l f4-m f5 "><span className="pink b">{name}</span>{description}</p>
                                 </div>
                             </div>

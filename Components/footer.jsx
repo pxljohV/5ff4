@@ -1,11 +1,11 @@
 import React from 'react'
-import kaizen from "./assets/kaizencreed.gif"
+import kaizen from "./assets/kaizencreed.png"
 import big5fflogo from './assets/5ff-big.gif'
 import Image from 'next/image'
 export default function Footer() {
     return (
         <div className="bg-black relative pv3 flex justify-between items-center ph4-ns flex-wrap-reverse ">
-            <div className="center tc">
+            <div className="center tc w-50-ns">
                 <h3>5 FORCE FIGHTERS</h3>
                 <p>Genre: Fighting</p>
                 <p>Release Date: TBA</p>
@@ -16,11 +16,13 @@ export default function Footer() {
             </div>
 
 
-            <div className="tc center overflow-hidden w-50-ns w-100 mw7">
+            <div className="tc center overflow-hidden w-50-ns">
                 <Image src={big5fflogo}
                     alt="5 Force Fighters logo"
-            
-                    layout="responsive"
+                    style={{
+                        width:"600px",
+                        height:"auto"
+                    }}
                 />
             </div>
         </div>

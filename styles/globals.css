@@ -236,3 +236,14 @@ a {
   background: rgb(232, 15, 92);
   background: linear-gradient(0deg, rgba(232, 15, 92, 1) 0%, rgba(0, 0, 0, 0.5438376034007353) 100%);
 }
+
+.emailBg{
+  background-image: url("../Components//assets/bg-3.gif");
+
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.emailCocoaButter{
+  width: 600px;
+  height: auto;
+}

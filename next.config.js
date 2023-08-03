@@ -15,14 +15,6 @@ const nextConfig = {
   },
     images: {
       domains:["www.udrop.com"],
-      remotePatterns: [
-        {
-          protocol: 'https',
-          hostname: 'udrop.com',
-          port: '',
-          pathname: '',
-        },
-      ],
     },
 }
 
