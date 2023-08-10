@@ -102,8 +102,8 @@ export default function NewsFetch() {
                       style={{ width: "auto", maxHeight: "900px" }}
                     />
                   )}
-                  <div className=" center purple5-bg  glow ma0">
-                    <p className="z-0 ff5 f4-m f4-l pa3 b  w-100 mw5  center ma0">{"LEARN MORE >> "}</p>
+                  <div className=" center bg_5ff  glow ma0">
+                    <p className="z-0 ff5 f4-m f4-l pa3 b  w-100 mw5  center ma0 ">{"LEARN MORE >> "}</p>
 
                   </div>
                 </Link>

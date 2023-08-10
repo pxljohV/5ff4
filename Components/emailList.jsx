@@ -11,7 +11,7 @@ import Image from "next/image";
 import { useEffect } from "react";
 export default function EmailList() {
   return (
-    <div className=" bg-blue ma0  relative emailBg pv6 ">
+    <div className=" bg-blue ma0  relative emailBg pv6-ns pv4 ">
       <div className="subscribe_container   flex justify-center items-center flex-wrap   w-100  top-0 ">
         <div className="subscribe_content  tc  relative ">
           <Image
@@ -20,10 +20,10 @@ export default function EmailList() {
             className="emailCocoaButter"
           />
         </div>
-        <div className="flex justify-center flex-wrap items-center tc  w-100 mw7">
+        <div className="flex justify-center flex-wrap items-center tc  w-100 mw7 ph3">
           <div className="subscribe_input w-70-l   ">
             <form className="tc">
-              <h2 className="f1-ns f2 w-100  ma0 tc ">STAY 5FF UPDATED</h2>
+              <h2 className="f1-ns f2 w-100  ma0 tc ">STAY UPDATED</h2>
               <p>Join the mailing list</p>
               <input
                 type="email"

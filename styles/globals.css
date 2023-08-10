@@ -244,6 +244,17 @@ a {
   background-size:cover;
 }
 .emailCocoaButter{
-  width: 600px;
+  width: 700px;
   height: auto;
+}
+
+.release{
+  width:400px;
+  height:auto;
+}
+@media (max-width:600px){
+    .release{
+      width:280px;
+      margin-top: -20px;
+    }
 }

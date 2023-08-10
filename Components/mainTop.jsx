@@ -7,8 +7,8 @@ import platforms from "./assets/releasePlatform.png"
 export default function MainTop() {
   return (
     <div className="w-100  ">
-      <div className="container relative">
-        <div className="  vh-100-l vh-75">
+      <div className="container relative pv5">
+        <div className="  vh-100-l vh-75 ">
           <Image
             src={bg}
             alt="5 force fighters banner"
@@ -16,7 +16,7 @@ export default function MainTop() {
             objectFit="cover"
             className=""
             quality={100}
-
+            style={{layout:"fill"}}
           />
         </div>
       </div>
@@ -32,7 +32,7 @@ export default function MainTop() {
           </div>
           <div className="b--red w-100  ph4-ns mh3 red-border ">
           <div className="ma0-ns mt4 ml0  shadow-text red-border  " style={{ marginLeft: "-10px" }}>
-              <Image src={platforms} alt="" width={300} height={100} className="red-border-img" />
+              <Image src={platforms} alt="" width={350} height={100} className="release red-border-img"/>
             </div>
           </div>
         </div>

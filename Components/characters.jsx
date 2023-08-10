@@ -85,7 +85,7 @@ export default function Characters() {
     return (
         <div className="ma0  ph4 pv4" >
             <div className="ma0 ">
-                <h2 className="ma0 f1 ">Your rider</h2>
+                <h2 className="ma0 f1 ">Your Rider</h2>
                 <div className=" black w-100 white pv4 flex justify-center" >
 
                     <div className="absolute  o-40 ">
@@ -126,18 +126,18 @@ export default function Characters() {
                                 }
                             </div>
 
-                            <div className="w-100 flex flex-wrap items-center ba bg-black">
+                            <div className="w-100 flex flex-wrap items-center bg-black">
                                 
                                 <div className=" w-50-l  w-100 bg-black-70 pa4-l ">
                                     <Image
                                         src={background}
                                         alt="5 force fighters banner"
-                                        className="cover h-auto ba  "
+                                        className="cover h-auto  "
                                         quality={100}
                                     />
                               
                                 </div>
-                                <div className="w-50-l w-100 pa4-l lh-2 bg-black-70  ba ">
+                                <div className="w-50-l w-100 pa4-l lh-2 bg-black-70   ">
                                     <p className="f3-l f4-m f5 "><span className="pink b">{name}</span>{description}</p>
                                 </div>
                             </div>
