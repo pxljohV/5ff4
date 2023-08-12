@@ -4,7 +4,7 @@ import big5fflogo from './assets/5ff-big.gif'
 import Image from 'next/image'
 export default function Footer() {
     return (
-        <div className="bg-black relative pv3 flex justify-between items-center ph4-ns flex-wrap-reverse ">
+        <div className="bg-black relative pv3 flex justify-between items-center ph4-ns flex-wrap-reverse white">
             <div className="center tc w-50-ns">
                 <h3>5 FORCE FIGHTERS</h3>
                 <p>Genre: Fighting</p>

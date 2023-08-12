@@ -108,7 +108,7 @@ export default function Characters() {
                                 {
                                     chars.map((r, index) => {
                                         return (
-                                            <div key={index} id={index} onClick={getDesc} ref={refsArray[index]} className="center flex  items-center b--white-10 br3 w-30 grow" >
+                                            <div key={index} id={index} onClick={getDesc} ref={refsArray[index]} className={`center flex items-center b--white-10 br2 w-30 grow ${index === 0 ? 'bg-white-10 ba' : ''}`}>
                                                 <div className={"pointer b--white-20 flex flex-wrap items-center w3 w-100-ns"} >
                                                     <div className=" ba flex items-center " style={{height:"70%"}}>
                                                         <Image src={r.icon} alt="character" className="w-auto h-auto" />
@@ -116,10 +116,7 @@ export default function Characters() {
                                                     <div className="flex items-center w-100 flex justify-center">
                                                     <p className="white tc f3-ns f7 ma0 pa3-ns ">{r.name}</p>
                                                     </div>
-                                               
-
                                                 </div>
-                                                
                                             </div>
                                         )
                                     })
