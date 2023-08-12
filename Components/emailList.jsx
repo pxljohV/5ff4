@@ -9,6 +9,7 @@ import discord_icon from "./assets/discord-icon.gif";
 import cocoapebbles from "./assets/cocoapebbles.gif";
 import Image from "next/image";
 import { useEffect } from "react";
+import Link from "next/link";
 export default function EmailList() {
   return (
     <div className=" bg-blue ma0  relative emailBg pv6-ns pv4 ">
@@ -20,7 +21,7 @@ export default function EmailList() {
             className="emailCocoaButter"
           />
         </div>
-        <div className="flex justify-center flex-wrap items-center tc  w-100 mw7 ph3">
+        <div className="flex justify-center flex-wrap items-center tc  w-100 mw7 ph3 mt6-l">
           <div className="subscribe_input w-70-l   ">
             <form className="tc">
               <h2 className="f1-ns f2 w-100  ma0 tc ">STAY UPDATED</h2>
@@ -42,27 +43,30 @@ export default function EmailList() {
           <div className="flex  flex-wrap justify-center items-center w-50-ns mt4-ns ">
             <div className="">
               <h3 className="f3 mb2">Follow Us</h3>
-        
             </div>
             <div className=" w-100 mw6 ma0">
               <div className="social flex  justify-center items-center w-100 ma0 ">
                 <div className="twitter">
-                  <Image
-                    src={twitter_icon}
-                    alt="cocoa and pebbles"
-                    width={40}
-                    height={40}
-                    quality={100}
-                  />
+                  <Link href="https://twitter.com/KaizenCreed">
+                    <Image
+                      src={twitter_icon}
+                      alt="cocoa and pebbles"
+                      width={40}
+                      height={40}
+                      quality={100}
+                    />
+                  </Link>
                 </div>
                 <div className="istagram ml2">
-                  <Image
-                    src={instagram_icon}
-                    alt="cocoa and pebbles"
-                    width={40}
-                    height={40}
-                    quality={100}
-                  />
+                  <Link href="https://instagram.com/kaizencreed/">
+                    <Image
+                      src={instagram_icon}
+                      alt="cocoa and pebbles"
+                      width={40}
+                      height={40}
+                      quality={100}
+                    />
+                  </Link>
                 </div>
                 <div className="tiktok ml2">
                   <Image
@@ -74,36 +78,40 @@ export default function EmailList() {
                   />
                 </div>
                 <div className="youtube ml2">
-                  <Image
-                    src={youtube_icon}
-                    alt="cocoa and pebbles"
-                    width={40}
-                    height={42}
-                    quality={100}
-                  />
+                  <Link href="https://youtube.com/c/KaizenCreed">
+                    <Image
+                      src={youtube_icon}
+                      alt="cocoa and pebbles"
+                      width={40}
+                      height={42}
+                      quality={100}
+                    />
+                  </Link>
                 </div>
                 <div className="facebook ml2">
-                  <Image
-                    src={facebook_icon}
-                    alt="cocoa and pebbles"
-                    width={40}
-                    height={40}
-                    quality={100}
-                  />
+                  <Link href="https://www.facebook.com/watch/Keena.lafa">
+                    <Image
+                      src={facebook_icon}
+                      alt="cocoa and pebbles"
+                      width={40}
+                      height={40}
+                      quality={100}
+                    />
+                  </Link>
                 </div>
                 <div className="discord ml2">
-                  <Image
-                    src={discord_icon}
-                    alt="cocoa and pebbles"
-                    width={40}
-                    height={40}
-                    quality={100}
-                  />
+                  <Link href="https://discord.gg/BWHxmCYkNM">
+                    <Image
+                      src={discord_icon}
+                      alt="cocoa and pebbles"
+                      width={40}
+                      height={40}
+                      quality={100}
+                    />
+                  </Link>
                 </div>
-                
               </div>
               <p className="f3 w-100 ma0 mb2">and join the 5FF community</p>
-
             </div>
           </div>
         </div>

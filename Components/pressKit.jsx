@@ -13,48 +13,43 @@ export default function PressKit() {
   });
   return (
     <div className="w-100">
-      <div className="container relative pv4-ns  ph4-ns ">
+      <div className="container relative pv4-ns   ">
         <div className="">
           <Image
             src={bg}
             alt="5 force fighters background"
             layout="fill"
             objectFit="cover"
-
             quality={100}
             style={{ imageRendering: "high-quality" }}
           />
         </div>
         <div
-          className="relative pv5-l pv4-m pv3 w-100 center ph4-ns ph2 flex justify-between flex-wrap items-center "
+          className="relative pv5-l pv4-m pv3 w-100 center ph4-ns flex justify-between flex-wrap items-center "
           style={{ top: "10%", left: "50%", transform: "translateX(-50%)" }}
         >
-          <div className="w-80 mw5">
-            <div className="w-100 relative">
-              <Image
-                src={five}
-                alt="5 force fighters logo"
-                layout="responsive"
-                className=""
-              />
-            </div>
+          <div className="w-100 ">
+            <h2 className="w-100 ph4 f1">Content</h2>
           </div>
 
-          <div className="w-100 flex justify-between items-center flex-wrap-reverse" style={{ marginTop: "-10%" }}>
+          <div
+            className="w-100 flex justify-between items-center flex-wrap-reverse"
+          
+          >
             <div className={`w-40-l w-100 white flex`}>
-              <h3
-                className="w-100 lh-2 f4-ns f3-m f5 ph3"
-              >
-                Unravel the story of 5 teens blessed with elemental powers, but
-                cursed with scarred pasts that have led them to a common, but
-                destructive, goal.
+              <h3 className="w-100 f4-ns f4-m f5 ph4">
+                5 Force Fighters, is a fighting game like no other! Where
+                burning meter raises your focus and the true force of each
+                distinct fighter. The simple inputs are balanced effortlessly
+                with methodical combat systems that partake in the interactive
+                story; the 5 protagonists will embrace the powers of the
+                5-Force, reach Corvegas, and try their damndest to defeat Ken D.
+                Sangre.
               </h3>
             </div>
-            <div className="container w-50-l w-100 " style={{ marginTop: "" }}>
+            <div className="container w-50-l w-100 ph4 ph0-ns" style={{ marginTop: "" }}>
               <p className="white underline">Press Kit</p>
-              <div
-                className={"relative  bg-black flex items-center ba"}
-              >
+              <div className={"relative  bg-black flex items-center "}>
                 {url && (
                   <ReactPlayer
                     url={url}
@@ -66,7 +61,6 @@ export default function PressKit() {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>

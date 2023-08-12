@@ -21,9 +21,9 @@ export default function Features() {
         setDescription(chars[e.currentTarget.id].desc)
     }
     return (
-        <div className=" relative ">
+        <div className=" relative white">
             <h2 className="ma0 f1 mb4 ph4">Features</h2>
-            <div className="container relative o-80">
+            <div className="container relative ">
                 <div className="">
                     <Image
                         src={bg}

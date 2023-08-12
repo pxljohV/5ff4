@@ -2,8 +2,9 @@ import React from "react";
 import Image from "next/image";
 import bg from "./assets/bg-0.gif";
 import consoles from "./assets/platforms.gif";
-import style from '../styles/Home.module.css'
-import platforms from "./assets/releasePlatform.png"
+import style from "../styles/Home.module.css";
+import platforms from "./assets/releasePlatform.png";
+import Link from "next/link";
 export default function MainTop() {
   return (
     <div className="w-100  ">
@@ -16,23 +17,39 @@ export default function MainTop() {
             objectFit="cover"
             className=""
             quality={100}
-            style={{layout:"fill"}}
+            style={{ layout: "fill" }}
           />
         </div>
       </div>
-      <div className="w-100  z-1 absolute  white " style={{ marginTop: "-350px" }}>
-        <div className="btn w-100 pointer ">
-          <h1 className="w-100 center tc f-headline-ns f1 ma0 shadow-text mt0-ns mt4">5 F<span className="f-subheadline-ns f2">ORCE</span> F<span className="f-subheadline-ns f2">IGHTERS</span></h1>
-          <div className="w-100 flex mt4">
-            <div className="w-100-ns w-80  mw6 tc  center">
-              <h2 className={`white  b--white ba center tc f1-ns f3 br2 bg_5ff pa4-ns pa3 mt3 `}>
-                WISHLIST NOW!
-              </h2>
+      <div className="main-container w-100  z-1 absolute  white">
+        <div className="btn w-100 " style={{letterSpacing:"-2px"}}>
+          <h1 className="w-100 center tc f-headline-ns f1 ma0 shadow-text mt0-ns mt4 ">
+            5 F<span className="f-subheadline-ns f2">ORCE</span> F
+            <span className="f-subheadline-ns f2">IGHTERS</span>
+          </h1>
+          <div className="w-100 flex mt4 ">
+            <div className="w-80  mw6 tc  center">
+              <Link href="https://store.steampowered.com/app/1599170/5_Force_Fighters/">
+                <button
+                  className={`white  b--white  center tc f1-ns f3 br2 bg_5ff pa4-ns pa3 w7 w-100 mt3-ns pointer grow ba bw1`}
+                >
+                  Add to your wishlist
+                </button>
+              </Link>
             </div>
           </div>
-          <div className="b--red w-100  ph4-ns mh3 red-border ">
-          <div className="ma0-ns mt4 ml0  shadow-text red-border  " style={{ marginLeft: "-10px" }}>
-              <Image src={platforms} alt="" width={350} height={100} className="release red-border-img"/>
+          <div className="b--red w-100  ph3 mh3 red-border ">
+            <div
+              className="ma0-ns mt5-ns mt4-m shadow-text red-border   "
+              style={{ marginLeft: "-10px" }}
+            >
+              <Image
+                src={platforms}
+                alt=""
+                width={400}
+                height={200}
+                className="release red-border-img"
+              />
             </div>
           </div>
         </div>

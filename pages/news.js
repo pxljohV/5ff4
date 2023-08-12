@@ -31,8 +31,7 @@ export default function Home({ data }) {
             <Link href="/">
               <p className="white f4-ns f5 pa2 br2 b">Home</p>
             </Link>
-            <Link href="#">
-              {/*steam url*/}
+            <Link href="https://store.steampowered.com/app/1599170/5_Force_Fighters/">
               <p className="white f4-ns f5 pa2 br2 b">WishList</p>
             </Link>
           </div>

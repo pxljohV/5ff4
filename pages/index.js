@@ -39,7 +39,7 @@ export default function Home({ data }) {
           <div className="w-60 ">
             <div className="flex ">
               <Link href="/">
-                <h1 className="white f3-ns f5 ">5 FORCE FIGHTERS</h1>
+                <h1 className="white f3-ns f4 ">5 FORCE FIGHTERS</h1>
               </Link>
             </div>
           </div>
@@ -47,15 +47,15 @@ export default function Home({ data }) {
             className=" flex items-center tc justify-center pointer ml6-m ml5 "
             onClick={handleMenu}
           >
-            <p className="pv1 ph3 tc ba bg-black b--white ba bw1 br3 hideWhenBig">
+            <p className="pv1 ph3 tc ba bg-black b--white ba bw1 br3 hideWhenBig ml4 ml2-ns">
               =
             </p>
           </div>
-          <div className=" flex justify-center items-center hideWhenSmall">
+          <div className=" flex justify-center items-center hideWhenSmall ">
             <Link href="./news">
               <p className="white f4-ns f5 pa2 br2 b hideWhenSmall">News</p>
             </Link>
-            <Link href="#">
+            <Link href="https://store.steampowered.com/app/1599170/5_Force_Fighters/">
               {/*steam url*/}
               <p className="white f4-ns f5 pa2 br2 b hideWhenSmall">WishList</p>
             </Link>

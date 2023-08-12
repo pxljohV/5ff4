@@ -75,18 +75,15 @@ export default function Characters() {
             if (desc.current.classList.contains("ba", "bg-white-10")) {
                 desc.current.classList.remove("ba", "bg-white-10")
             }
-
-
-
         })
 
         e.currentTarget.classList.add("ba", "bg-white-10")
     }
     return (
-        <div className="ma0  ph4 pv4" >
+        <div className="ma0  ph4 pv4 white " >
             <div className="ma0 ">
-                <h2 className="ma0 f1 ">Your Rider</h2>
-                <div className=" black w-100 white pv4 flex justify-center" >
+                <h2 className="ma0 f1 white">Your Rider</h2>
+                <div className=" black w-100 pv4 flex justify-center" >
 
                     <div className="absolute  o-40 ">
                         <Image
@@ -102,13 +99,13 @@ export default function Characters() {
                         />
                     </div>
    
-                    <div className=" w-100  f2-ns f3-m f4 shadow-text relative  " ref={desc}>
+                    <div className=" w-100  f2-ns f3-m f4 shadow-text relative white" ref={desc}>
                         <div className="flex flex-wrap items-center  w-100">
                             <div className=" w-100 flex ">
                                 {
                                     chars.map((r, index) => {
                                         return (
-                                            <div key={index} id={index} onClick={getDesc} ref={refsArray[index]} className={`center flex items-center b--white-10 br2 w-30 grow ${index === 0 ? 'bg-white-10 ba' : ''}`}>
+                                            <div key={index} id={index} onClick={getDesc} ref={refsArray[index]} className={`center flex justify-center items-center b--white-10 br2 w-30 grow ${index === 0 ? 'bg-white-10 ba' : ''}`}>
                                                 <div className={"pointer b--white-20 flex flex-wrap items-center w3 w-100-ns"} >
                                                     <div className=" ba flex items-center " style={{height:"70%"}}>
                                                         <Image src={r.icon} alt="character" className="w-auto h-auto" />
