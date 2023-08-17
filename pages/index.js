@@ -39,7 +39,7 @@ export default function Home({ data }) {
           <div className="w-60 ">
             <div className="flex ">
               <Link href="/">
-                <h1 className="white f3-ns f4 ">5 FORCE FIGHTERS</h1>
+                <h1 className="white f3-ns f3 ">5 FORCE FIGHTERS</h1>
               </Link>
             </div>
           </div>

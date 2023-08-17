@@ -1,6 +1,6 @@
 import React from 'react'
-import kaizen from "./assets/kaizencreed.png"
-import big5fflogo from './assets/5ff-big.gif'
+import kaizen from "./assets/KaizenCreed.png"
+import big5fflogo from './assets/5FF-big.png'
 import Image from 'next/image'
 export default function Footer() {
     return (

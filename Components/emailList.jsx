@@ -47,7 +47,11 @@ export default function EmailList() {
             <div className=" w-100 mw6 ma0">
               <div className="social flex  justify-center items-center w-100 ma0 ">
                 <div className="twitter">
-                  <Link href="https://twitter.com/KaizenCreed">
+                  <Link
+                    href="https://twitter.com/KaizenCreed"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
                     <Image
                       src={twitter_icon}
                       alt="cocoa and pebbles"
@@ -58,7 +62,11 @@ export default function EmailList() {
                   </Link>
                 </div>
                 <div className="istagram ml2">
-                  <Link href="https://instagram.com/kaizencreed/">
+                  <Link
+                    href="https://instagram.com/kaizencreed/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
                     <Image
                       src={instagram_icon}
                       alt="cocoa and pebbles"
@@ -69,16 +77,26 @@ export default function EmailList() {
                   </Link>
                 </div>
                 <div className="tiktok ml2">
-                  <Image
-                    src={tiktok_icon}
-                    alt="cocoa and pebbles"
-                    width={40}
-                    height={40}
-                    quality={100}
-                  />
+                  <Link
+                    href="https://www.tiktok.com/@kaizencreed"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <Image
+                      src={tiktok_icon}
+                      alt="cocoa and pebbles"
+                      width={40}
+                      height={40}
+                      quality={100}
+                    />
+                  </Link>
                 </div>
                 <div className="youtube ml2">
-                  <Link href="https://youtube.com/c/KaizenCreed">
+                  <Link
+                    href="https://youtube.com/c/KaizenCreed"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
                     <Image
                       src={youtube_icon}
                       alt="cocoa and pebbles"
@@ -89,7 +107,11 @@ export default function EmailList() {
                   </Link>
                 </div>
                 <div className="facebook ml2">
-                  <Link href="https://www.facebook.com/watch/Keena.lafa">
+                  <Link
+                    href="https://www.facebook.com/watch/Keena.lafa"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
                     <Image
                       src={facebook_icon}
                       alt="cocoa and pebbles"
@@ -100,7 +122,11 @@ export default function EmailList() {
                   </Link>
                 </div>
                 <div className="discord ml2">
-                  <Link href="https://discord.gg/BWHxmCYkNM">
+                  <Link
+                    href="https://discord.gg/BWHxmCYkNM"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
                     <Image
                       src={discord_icon}
                       alt="cocoa and pebbles"

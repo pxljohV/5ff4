@@ -29,11 +29,12 @@ export default function MainTop() {
           </h1>
           <div className="w-100 flex mt4 ">
             <div className="w-80  mw6 tc  center">
-              <Link href="https://store.steampowered.com/app/1599170/5_Force_Fighters/">
+              <Link href="https://store.steampowered.com/app/1599170/5_Force_Fighters/"  rel="noopener noreferrer"
+                    target="_blank">
                 <button
                   className={`white  b--white  center tc f1-ns f3 br2 bg_5ff pa4-ns pa3 w7 w-100 mt3-ns pointer grow ba bw1`}
                 >
-                  Add to your wishlist
+                  Whishlist
                 </button>
               </Link>
             </div>

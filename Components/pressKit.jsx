@@ -12,7 +12,7 @@ export default function PressKit() {
     setUrl("https://www.youtube.com/watch?v=vrimRovXtcQ");
   });
   return (
-    <div className="w-100">
+    <div className="w-100 white">
       <div className="container relative pv4-ns   ">
         <div className="">
           <Image
