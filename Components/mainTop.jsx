@@ -4,10 +4,14 @@ import bg from "./assets/bg-0.gif";
 import consoles from "./assets/platforms.gif";
 import style from "../styles/Home.module.css";
 import platforms from "./assets/releasePlatform.png";
+
 import Link from "next/link";
 export default function MainTop() {
+
+
+
   return (
-    <div className="w-100  ">
+    <div className= "w-100  mt5-m  ">
       <div className="container relative pv5">
         <div className="  vh-100-l vh-75 ">
           <Image
@@ -23,7 +27,7 @@ export default function MainTop() {
       </div>
       <div className="main-container w-100  z-1 absolute  white">
         <div className="btn w-100 " style={{letterSpacing:"-2px"}}>
-          <h1 className="w-100 center tc f-headline-ns f1 ma0 shadow-text mt0-ns mt4 ">
+          <h1 className="w-100 center tc f-headline-ns f1 ma0 shadow-text mt0-ns mt4 mt4-m ">
             5 F<span className="f-subheadline-ns f2">ORCE</span> F
             <span className="f-subheadline-ns f2">IGHTERS</span>
           </h1>
