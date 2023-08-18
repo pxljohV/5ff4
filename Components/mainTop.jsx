@@ -39,17 +39,17 @@ export default function MainTop() {
               </Link>
             </div>
           </div>
-          <div className="b--red w-100  ph3 mh3 red-border ">
+          <div className="b--red mw7 ph3 mh3 ">
             <div
-              className="ma0-ns mt5-ns mt4-m shadow-text red-border   "
-              style={{ marginLeft: "-10px" }}
+              className="ma0-ns mt5-ns mt4-m shadow-text red-border  w-100  "
+             
             >
               <Image
                 src={platforms}
                 alt=""
                 width={400}
                 height={200}
-                className="release red-border-img"
+                className="release red-border"
               />
             </div>
           </div>
