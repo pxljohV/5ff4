@@ -91,16 +91,16 @@ export default function Characters() {
               style={{
                 width: "100%",
                 height: "auto",
-                display:"cover"
+                display: "cover",
               }}
             />
           </div>
 
           <div
-            className=" w-100  f2-ns f3-m f4 shadow-text relative white"
+            className="  f2-ns f3-m f4 shadow-text relative white"
             ref={desc}
           >
-            <div className="flex flex-wrap items-center  w-100">
+            <div className="flex flex-wrap items-center  ">
               <div className=" w-100 flex ">
                 {chars.map((r, index) => {
                   return (
@@ -109,18 +109,18 @@ export default function Characters() {
                       id={index}
                       onClick={getDesc}
                       ref={refsArray[index]}
-                      className={`center flex justify-center items-center b--white-10 br2 w-30 grow ${
+                      className={`center flex justify-center items-end  b--white-10 br2 w-30 grow ${
                         index === 0 ? "bg-white-10 ba" : ""
                       }`}
                     >
                       <div
                         className={
-                          "pointer b--white-20 flex flex-wrap items-center w3 w-100-ns"
+                          "pointer b--white-20 flex flex-wrap items-center  w-100-ns "
                         }
                       >
                         <div
-                          className=" ba flex items-center "
-                          style={{ height: "70%" }}
+                          className=" ba flex items-center bg-black-50 w-100-m"
+                          style={{ height: "auto" }}
                         >
                           <Image
                             src={r.icon}
@@ -129,7 +129,7 @@ export default function Characters() {
                           />
                         </div>
                         <div className="flex items-center w-100 flex justify-center">
-                          <p className="white tc f3-ns f7 ma0 pa3-ns ">
+                          <p className="white tc f3-ns f5-m f7 ma0 pv3-l pv2-m">
                             {r.name}
                           </p>
                         </div>

@@ -37,7 +37,7 @@ export default function PressKit() {
           
           >
             <div className={`w-40-l w-100 white flex`}>
-              <h3 className="w-100 f4-ns f4-m f5 ph4">
+              <h3 className="w-100 f4-ns f4-m f5 ph4 lh-2">
                 5 Force Fighters, is a fighting game like no other! Where
                 burning meter raises your focus and the true force of each
                 distinct fighter. The simple inputs are balanced effortlessly

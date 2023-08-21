@@ -21,30 +21,31 @@ export default function EmailList() {
             className="emailCocoaButter"
           />
         </div>
-        <div className="flex justify-center flex-wrap items-center tc  w-100 mw7 ph3 mt6-l">
-          <div className="subscribe_input w-70-l   ">
-            <form className="tc">
+        <div className="flex justify-center flex-wrap items-center tc  w-100 mw6 ph1-l ph3 mt6-l ">
+          <div className="subscribe_input w-80-l  shadow-text ">
+            <form className="tc ">
               <h2 className="f1-ns f2 w-100  ma0 tc ">STAY UPDATED</h2>
               <p>Join the mailing list</p>
               <input
                 type="email"
                 placeholder="Your email address"
-                className="pa3 w-100 mw6 bg-white-90 color black-80 "
+                className="pa3-ns pa2 w-100 mw6 bg-white-90 color black-80 f4 "
                 required
+                style={{outline:"none"}}
               />
               <button
                 type="submit"
-                className="w-100 mw6 pa3 bg-purple pointer hover-bg-light-purple "
+                className="w-100 mw6  pa3 bg-purple pointer hover-bg-light-purple "
               >
                 Subscribe
               </button>
             </form>
           </div>
-          <div className="flex  flex-wrap justify-center items-center w-50-ns mt4-ns ">
+          <div className="flex  flex-wrap justify-center items-center w-70-ns  ">
             <div className="">
               <h3 className="f3 mb2">Follow Us</h3>
             </div>
-            <div className=" w-100 mw6 ma0">
+            <div className=" w-100 mw7 ma0 ">
               <div className="social flex  justify-center items-center w-100 ma0 ">
                 <div className="twitter">
                   <Link
@@ -137,7 +138,7 @@ export default function EmailList() {
                   </Link>
                 </div>
               </div>
-              <p className="f3 w-100 ma0 mb2">and join the 5FF community</p>
+              <p className="f4  w-100 ma0 mb2">and join the 5FF community</p>
             </div>
           </div>
         </div>
