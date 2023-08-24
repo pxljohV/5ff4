@@ -14,22 +14,22 @@ export default function EmailList() {
   return (
     <div className=" bg-blue ma0  relative emailBg pv6-ns pv4 ">
       <div className="subscribe_container   flex justify-around items-center flex-wrap   w-100  top-0 ">
-        <div className="subscribe_content  tc  relative b">
+        <div className="subscribe_content  tc  relative b ">
           <Image
             src={cocoapebbles}
             alt="cocoa and pebbles"
             className="emailCocoaButter"
           />
         </div>
-        <div className="flex justify-center flex-wrap items-center tc  w-100 mw7-l mw6 ph1-l ph3 mt6-l mr5 ">
-          <div className="subscribe_input w-80-l  shadow-text ">
-            <form className="tc pv4-l">
+        <div className="flex justify-center flex-wrap items-center tc  w-100 mw7-l mw7 ph1-l ph3 mt6-l   ">
+          <div className="subscribe_input w-80-l  center w-90 shadow-text email-box">
+            <form className="tc pv4-l w-100   ">
               <h2 className="f1-ns f2 w-100  ma0 tc ">STAY UPDATED</h2>
               <p>Join the mailing list</p>
               <input
                 type="email"
                 placeholder="Your email address"
-                className="pa3-ns pa2 w-100 mw6 bg-white-90 color black-80 f4 mw7-l "
+                className="pa3-ns pa2 w-100 mw7  bg-white-90 color black-80 f4  "
                 required
                 style={{outline:"none"}}
               />

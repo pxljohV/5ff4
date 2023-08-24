@@ -263,6 +263,20 @@ a {
 .main-container button {
   padding: 20px;
 }
+@media(min-width:1515px){
+  .email-box{
+    margin-right: 100px;
+
+  }
+  
+}
+@media only screen and (max-width:1515px) and (min-width:959px){
+  .email-box{
+    margin-top: -100px;
+  }
+  
+}
+
 @media (max-width: 700px) {
   .release {
     width: 350px;
