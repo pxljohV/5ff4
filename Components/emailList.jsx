@@ -22,7 +22,7 @@ export default function EmailList() {
           />
         </div>
         <div className="flex justify-center flex-wrap items-center tc  w-100 mw7-l mw7 ph1-l ph3 mt6-l   ">
-          <div className="subscribe_input w-80-l  center w-90 shadow-text email-box">
+          <div className="subscribe_input w-80-l  center w-90 shadow-text email-box ">
             <form className="tc pv4-l w-100   ">
               <h2 className="f1-ns f2 w-100  ma0 tc ">STAY UPDATED</h2>
               <p>Join the mailing list</p>
@@ -42,11 +42,11 @@ export default function EmailList() {
             </form>
           </div>
           <div className="flex  flex-wrap justify-center items-center w-70-ns  ">
-            <div className="">
-              <h3 className="f3 mb2">Follow Us</h3>
+            <div className=" w-100">
+              <h3 className="f2-ns f3 w-100 ma0 mt3-l mt4-m mt3">Follow Us</h3>
             </div>
             <div className=" w-100 mw7 ma0 ">
-              <div className="social flex  justify-center items-center w-100 ma0 ">
+              <div className="social flex  justify-center items-center w-100 ma0 mt3">
                 <div className="twitter">
                   <Link
                     href="https://twitter.com/KaizenCreed"
