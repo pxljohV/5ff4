@@ -35,7 +35,7 @@ export default function EmailList() {
               />
               <button
                 type="submit"
-                className="w-100 mw7  pa3 bg-purple pointer hover-bg-light-purple "
+                className="w-100 mw7  pa3 bg-purple pointer hover-bg-light-purple white"
               >
                 Subscribe
               </button>
