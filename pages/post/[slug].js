@@ -4,7 +4,8 @@ import Link from "next/link";
 import Head from "next/head.js";
 import Footer from "../../Components/footer";
 import tachyons from "tachyons/css/tachyons.css";
-import styles from "../../styles/Home.module.css";
+
+
 import { useEffect, useState } from "react";
 import { firebaseConfig } from "../../Components/firebaseConfig.js";
 import { initializeApp } from "firebase/app";
@@ -18,6 +19,14 @@ import {
   getDocs,
   query,
 } from "firebase/firestore";
+
+const color = "#e7094c"
+const border={
+
+    borderBottom: "solid 1px #ffffff67",
+    boxShadow: "inset 0px -8px 8px -4px #e7094c",
+    backgroundColor: "rgba(70, 29, 48, 0)"
+  }
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
@@ -66,39 +75,40 @@ export default function NewsFetch({ Slug }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className="ma0 pa0 fixed top-0 z-1">
+     
+      <header className="ma0 pa0 fixed top-0 z-2 ">
         <nav
-          className="fixed w-100 pa4-ns pv4 ph3 ma0 h2 top-0 flex items-center justify-between  bb b--pink "
-          style={{ backgroundColor: "#1c0f1fdd" }}
+          className={`nav_gradient fixed w-100  ph3 ma0 h2 top-0 flex items-center justify-between pv4 ${border} `}
         >
           <div className="w-60 ">
             <div className="flex ">
               <Link href="/">
-                <h1 className="white f4 ba pa2 br2">
-                  <span className="orange">5 </span>FORCE FIGHTERS
-                </h1>
+                <h1 className="white f3-ns f5 ">5 FORCE FIGHTERS</h1>
               </Link>
             </div>
           </div>
-          <div className=" flex justify-center ">
-            <Link href="../../">
-              <h1 className="white f4 pa2 br2">HOME</h1>
-            </Link>
 
-            <Link href="../news">
-              <h1 className="white f4 pa2 br2">NEWS</h1>
+          <div className=" flex justify-center items-center">
+            <Link href="/">
+              <p className="white f4-ns f5 pa2 br2 b">Home</p>
+            </Link>
+            <Link href="https://store.steampowered.com/app/1599170/5_Force_Fighters/">
+              <p className="white f4-ns f5 pa2 br2 b">WishList</p>
             </Link>
           </div>
         </nav>
       </header>
 
       <div className=" w-70 center pv4">
-        <div className=" w-100 mt5 tc ">
-          <div className="tl orange f4 ba w-10 pa3 ">
+    
+        <div className=" w-100tc ">
+        
+          <div className="tl pink f4 w-10  mt5" >
+            
             <Link href="../news">{"<<back"}</Link>
           </div>
-          <h2 className="pa0 f1-l f1-m f2 ma0 bb w-100 center pb4 white">
-            5FF NEWS
+          <h2 className="pa0 f3 white tc ma0  w-100 center pb4 white mt4">
+            5FF News
           </h2>
         </div>
 
@@ -107,7 +117,7 @@ export default function NewsFetch({ Slug }) {
             return (
               <div key={index} className="w-100  tc center  b--pink">
                 <div className=" w-100 tc flex items-center ">
-                  <h1 className="pa0 f2-l f3-m f3 ma0 bb w-100 center mb3 pv2">
+                  <h1 className="pa0 f2-l f3-m f3 ma0 w-100 center mb3 pv2 ">
                     {doc.title}
                   </h1>
                 </div>
@@ -138,7 +148,7 @@ export default function NewsFetch({ Slug }) {
           }
         })}
       </div>
-      <div className="tl orange f4 mb3 w-70 center bb b--white-10 pv3">
+      <div className="tl pink f4 mb3 w-70 center bb b--white-10 pv3">
         <Link href="../news" className="">
           {"<<back"}
         </Link>
