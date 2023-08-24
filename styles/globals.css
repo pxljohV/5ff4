@@ -79,12 +79,8 @@ a {
   }
 }
 
-@media (max-width: 1648px) {
-  .n-container {
-    margin-left: 50%;
-    transform: translateX(-50%);
-  }
-}
+
+
 
 .purple5 {
   color: #1c001c;

@@ -5,7 +5,6 @@ import Head from "next/head.js";
 import Footer from "../../Components/footer";
 import tachyons from "tachyons/css/tachyons.css";
 
-
 import { useEffect, useState } from "react";
 import { firebaseConfig } from "../../Components/firebaseConfig.js";
 import { initializeApp } from "firebase/app";
@@ -20,13 +19,12 @@ import {
   query,
 } from "firebase/firestore";
 
-const color = "#e7094c"
-const border={
-
-    borderBottom: "solid 1px #ffffff67",
-    boxShadow: "inset 0px -8px 8px -4px #e7094c",
-    backgroundColor: "rgba(70, 29, 48, 0)"
-  }
+const color = "#e7094c";
+const border = {
+  borderBottom: "solid 1px #ffffff67",
+  boxShadow: "inset 0px -8px 8px -4px #e7094c",
+  backgroundColor: "rgba(70, 29, 48, 0)",
+};
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
@@ -75,7 +73,6 @@ export default function NewsFetch({ Slug }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-     
       <header className="ma0 pa0 fixed top-0 z-2 ">
         <nav
           className={`nav_gradient fixed w-100  ph3 ma0 h2 top-0 flex items-center justify-between pv4 ${border} `}
@@ -99,19 +96,20 @@ export default function NewsFetch({ Slug }) {
         </nav>
       </header>
 
-      <div className=" w-70 center pv4">
-    
-        <div className=" w-100tc ">
-        
-          <div className="tl pink f4 w-10  mt5" >
-            
-            <Link href="../news">{"<<back"}</Link>
-          </div>
-          <h2 className="pa0 f3 white tc ma0  w-100 center pb4 white mt4">
-            5FF News
-          </h2>
+      <div className=" w-70-l w-80-m w-90 center pv4">
+        <div className="tl f4 w-10  mt5" style={{ color: color }}>
+          <Link href="../news">{"<<back"}</Link>
         </div>
-
+        <div className=" w-100tc ">
+          <div className=" w-100  tc mt4 white">
+            <p className="f3 ma0 b" style={{ color: color }}>
+              NEWS
+            </p>
+            <h2 className="pa0 f1-l f1-m f2 ma0 bb w-90 center pb4">
+              & UPDATES
+            </h2>
+          </div>
+        </div>
         {result.map((doc, index) => {
           if (doc.date == router.query.slug) {
             return (
@@ -148,7 +146,10 @@ export default function NewsFetch({ Slug }) {
           }
         })}
       </div>
-      <div className="tl pink f4 mb3 w-70 center bb b--white-10 pv3">
+      <div
+        className="tl f4 mb3 w-70 center bb b--white-10 pv3"
+        style={{ color: color }}
+      >
         <Link href="../news" className="">
           {"<<back"}
         </Link>
