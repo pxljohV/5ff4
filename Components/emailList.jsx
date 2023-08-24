@@ -13,29 +13,29 @@ import Link from "next/link";
 export default function EmailList() {
   return (
     <div className=" bg-blue ma0  relative emailBg pv6-ns pv4 ">
-      <div className="subscribe_container   flex justify-center items-center flex-wrap   w-100  top-0 ">
-        <div className="subscribe_content  tc  relative ">
+      <div className="subscribe_container   flex justify-around items-center flex-wrap   w-100  top-0 ">
+        <div className="subscribe_content  tc  relative b">
           <Image
             src={cocoapebbles}
             alt="cocoa and pebbles"
             className="emailCocoaButter"
           />
         </div>
-        <div className="flex justify-center flex-wrap items-center tc  w-100 mw6 ph1-l ph3 mt6-l ">
+        <div className="flex justify-center flex-wrap items-center tc  w-100 mw7-l mw6 ph1-l ph3 mt6-l mr5 ">
           <div className="subscribe_input w-80-l  shadow-text ">
-            <form className="tc ">
+            <form className="tc pv4-l">
               <h2 className="f1-ns f2 w-100  ma0 tc ">STAY UPDATED</h2>
               <p>Join the mailing list</p>
               <input
                 type="email"
                 placeholder="Your email address"
-                className="pa3-ns pa2 w-100 mw6 bg-white-90 color black-80 f4 "
+                className="pa3-ns pa2 w-100 mw6 bg-white-90 color black-80 f4 mw7-l "
                 required
                 style={{outline:"none"}}
               />
               <button
                 type="submit"
-                className="w-100 mw6  pa3 bg-purple pointer hover-bg-light-purple "
+                className="w-100 mw7  pa3 bg-purple pointer hover-bg-light-purple "
               >
                 Subscribe
               </button>
