@@ -39,12 +39,12 @@ export default function Home({ data }) {
           <div className="w-60 ">
             <div className="flex ">
               <Link href="/">
-                <h1 className="white f3-ns f5 ">5 FORCE FIGHTERS</h1>
+                <h1 className="white f3-ns f5 " >5 FORCE FIGHTERS</h1>
               </Link>
             </div>
           </div>
           <div
-            className=" flex items-center tc justify-center pointer ml6-m ml5 "
+            className=" flex items-center tc justify-center pointer ml6-m ml4 "
             onClick={handleMenu}
           >
        
