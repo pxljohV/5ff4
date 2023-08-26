@@ -21,8 +21,8 @@ export default function EmailList() {
             className="emailCocoaButter"
           />
         </div>
-        <div className="flex justify-center flex-wrap items-center tc  w-100 mw7-l mw7 ph1-l ph3 mt6-l   ">
-          <div className="subscribe_input w-80-l  center w-90 shadow-text email-box ">
+        <div className="flex justify-center flex-wrap items-center tc  w-100 mw7-l mw7 ph1-l ph3 mt6-l   shadow-text ">
+          <div className="subscribe_input w-80-l  center w-90  email-box ">
             <form className="tc pv4-l w-100   ">
               <h2 className="f1-ns f2 w-100  ma0 tc ">STAY UPDATED</h2>
               <p>Join the mailing list</p>
@@ -31,7 +31,7 @@ export default function EmailList() {
                 placeholder="Your email address"
                 className="pa3-ns pa2 w-100 mw7  bg-white-90 color black-80 f4  "
                 required
-                style={{outline:"none"}}
+                style={{ outline: "none" }}
               />
               <button
                 type="submit"
@@ -43,11 +43,11 @@ export default function EmailList() {
           </div>
           <div className="flex  flex-wrap justify-center items-center w-70-ns  ">
             <div className=" w-100">
-              <h3 className="f2-ns f3 w-100 ma0 mt3-l mt4-m mt3">Follow Us</h3>
+              <h3 className="f1-ns f2 w-100 ma0 mt3-l mt4-m mt3">FOLLOW US</h3>
             </div>
-            <div className=" w-100 mw7 ma0 ">
-              <div className="social flex  justify-center items-center w-100 ma0 mt3">
-                <div className="twitter">
+            <div className=" w-100  ma0 mt2" style={{width:"320px"}}>
+              <div className="social flex  justify-around items-center w-100 ma0 mt3 ">
+                <div className="twitter img-shadow ">
                   <Link
                     href="https://twitter.com/KaizenCreed"
                     rel="noopener noreferrer"
@@ -59,6 +59,7 @@ export default function EmailList() {
                       width={40}
                       height={40}
                       quality={100}
+                      className=""
                     />
                   </Link>
                 </div>

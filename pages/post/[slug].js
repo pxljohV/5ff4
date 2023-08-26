@@ -96,19 +96,22 @@ export default function NewsFetch({ Slug }) {
         </nav>
       </header>
 
-      <div className=" w-70-l w-80-m w-90 center pv4">
+      <div className=" w-70-l w-80-m w-90 center pv4 mt3 ">
+        <div className=" w-100tc ">
+          <div className=" w-100  tc bb pb3 mw7 center ">
+            <p
+              className="f2 b ma0 pt3 pt4  w-90 center"
+              style={{ color: color }}
+            >
+              NEWS{" "}
+              <span className="pa0 f2 ma0 w-90 center pb4 white">
+                & UPDATES
+              </span>
+            </p>
+          </div>
+        </div>
         <div className="tl f4 w-10  mt5" style={{ color: color }}>
           <Link href="../news">{"<<back"}</Link>
-        </div>
-        <div className=" w-100tc ">
-          <div className=" w-100  tc mt4 white">
-            <p className="f3 ma0 b" style={{ color: color }}>
-              NEWS
-            </p>
-            <h2 className="pa0 f1-l f1-m f2 ma0 bb w-90 center pb4">
-              & UPDATES
-            </h2>
-          </div>
         </div>
         {result.map((doc, index) => {
           if (doc.date == router.query.slug) {

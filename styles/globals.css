@@ -300,3 +300,18 @@ a {
   height: 100vh;
   transition: 0.5s;
 }
+
+.img_shadow{
+  box-shadow: 0px 8px 8px #000000;;
+   text-shadow: 0px 8px 8px #000000;
+   border: solid  1px white;
+}
+
+.container-news{
+  background-image: url("../Components/assets/5FF-big.png");
+  background-size: 200px;
+  background-repeat: repeat;
+  background-position-x: center;
+  background-blend-mode: multiply;
+
+}

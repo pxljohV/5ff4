@@ -82,29 +82,38 @@ export default function NewsFetch() {
   useEffect(() => { }, [result]);
 
   return (
-    <div className="white">
-      <div className=" w-70-l w-90-m w-100 center ">
-        <div className=" w-100 mt5 tc">
-          <p className="f3 b ma0 pt3 pt4  w-90 center" style={{color: color}}>NEWS</p>
-          <h2 className="pa0 f3 ma0 w-90 center pb4 bb">& UPDATES</h2>
+    <div className="container-news white bg-black-90">
+      <div className=" w-70-l w-90-m w-100 center mt3 pv4">
+        <div className=" w-100  tc bb b--red pb3 mw7 center ">
+          <p className="f2 b ma0 pt3 pt4  w-90 center" style={{ color: color }}>
+            NEWS{" "}
+            <span className="pa0 f2 ma0 w-90 center pb4 white">& UPDATES</span>
+          </p>
         </div>
-        <div className="container w-100 flex flex-wrap ph5-l pv5  b--red justify-between ph3" >
+      
+        <div className="container w-100 flex flex-wrap ph5-l pv3 bg-white-10   b--red justify-between items-end ph3">
           {result.map((doc, index) => {
             return (
-              <div key={index} className={`newsGet  w-70-ns mw6 tc  ${index % 2 === 0 ? "mr-auto" : ""}`}>
+              <div
+                key={index}
+                className={`newsGet  w-40-ns  mw7 tc mt4 bg-black pa2 ${
+                  index % 2 === 0 ? "mr-auto" : ""
+                }`}
+              >
                 <Link href={`/post/${doc.date}`}>
-                  <h2>{doc.title}</h2>
-                  <p>{doc.date}</p>
                   {doc.img && (
                     <img
                       src={doc.img}
                       alt=""
-                      style={{ width: "auto", maxHeight: "900px" }}
+                      style={{ width: "490px", heigth: "auto" }}
                     />
                   )}
-                  <div className=" center bg_5ff  glow ma0">
-                    <p className="z-0 ff5 f4-m f4-l pa3 b  w-100 mw5  center ma0 ">{"LEARN MORE >> "}</p>
-
+                  <h3 className="ma0 f4">{doc.title}</h3>
+                  <p className="ma0 f6">{doc.date}</p>
+                  <div className=" center bg_5ff  glow ma0 mt2">
+                    <p className="z-0 ff5 f6-l f6-m pv3 b  w-100 center ma0 ">
+                      {"LEARN MORE >>"} 
+                    </p>
                   </div>
                 </Link>
               </div>
