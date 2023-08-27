@@ -14,14 +14,14 @@ export default function EmailList() {
   return (
     <div className=" bg-blue ma0  relative emailBg pv6-ns pv4 ">
       <div className="subscribe_container   flex justify-around items-center flex-wrap   w-100  top-0 ">
-        <div className="subscribe_content  tc  relative b ">
+        <div className="subscribe_content   tc  relative b ">
           <Image
             src={cocoapebbles}
             alt="cocoa and pebbles"
             className="emailCocoaButter"
           />
         </div>
-        <div className="flex justify-center flex-wrap items-center tc  w-100 mw7-l mw7 ph1-l ph3 mt6-l   shadow-text ">
+        <div className="flex justify-center flex-wrap items-center tc  w-100 mw7-l mw7 ph1-l ph3 mt6-l   shadow-text ba">
           <div className="subscribe_input w-80-l  center w-90  email-box ">
             <form className="tc pv4-l w-100   ">
               <h2 className="f1-ns f2 w-100  ma0 tc ">STAY UPDATED</h2>
