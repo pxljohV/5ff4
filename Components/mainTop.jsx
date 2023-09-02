@@ -38,7 +38,7 @@ export default function MainTop() {
                 <button
                   className={`white  b--white  center tc f1-ns f3 br2 bg_5ff pa4-ns pa3 w7 w-100 mt3-ns pointer grow ba bw1`}
                 >
-                  Whishlist
+                  Whishlist Now!
                 </button>
               </Link>
             </div>
