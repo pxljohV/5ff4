@@ -119,8 +119,8 @@ export default function Characters() {
                         }
                       >
                         <div
-                          className=" ba flex items-center bg-black-50 w-100-m"
-                          style={{ height: "auto" }}
+                          className=" ba flex items-center bg-black-50 w-100-m "
+                          style={{minHeight:"80px",  height: "auto" }}
                         >
                           <Image
                             src={r.icon}
