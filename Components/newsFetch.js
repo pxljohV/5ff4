@@ -6,10 +6,6 @@ import { initializeApp } from "firebase/app";
 import {
   getFirestore,
   collection,
-  doc,
-  addDoc,
-  setDoc,
-  getDoc,
   getDocs,
   query,
 } from "firebase/firestore";
@@ -20,33 +16,6 @@ const app = initializeApp(firebaseConfig);
 
 // Initialize Cloud Firestore and get a reference to the service
 const db = getFirestore(app);
-
-/*to do - send email to an email list */
-function submit() {
-  /*  get doc
-      push to doc
-
-    // Initialize Firebase
-    const firebaseConfig = {
-      // Your Firebase configuration object goes here
-    };
-    firebase.initializeApp(firebaseConfig);
-
-    // Get a document reference
-    const db = firebase.firestore();
-    const docRef = db.collection('users').doc('abc123');
-
-    // Update the document's "emails" array field
-    docRef.update({
-      emails: firebase.firestore.FieldValue.arrayUnion('email@email.com')
-    }).then(() => {
-      console.log('Email added to array successfully');
-    }).catch((error) => {
-      console.error('Error adding email to array:', error);
-    });
-  */
-}
-
 
 export default function NewsFetch() {
   async function getDocument() {
@@ -90,15 +59,14 @@ export default function NewsFetch() {
             <span className="pa0 f2 ma0 w-90 center pb4 white">& UPDATES</span>
           </p>
         </div>
-      
+
         <div className="container w-100 flex flex-wrap ph5-l pv3 bg-white-10   b--red justify-between items-end ph3">
           {result.map((doc, index) => {
             return (
               <div
                 key={index}
-                className={`newsGet  w-40-ns  mw7 tc mt4 bg-black pa2 ${
-                  index % 2 === 0 ? "mr-auto" : ""
-                }`}
+                className={`newsGet  w-40-ns  mw7 tc mt4 bg-black pa2 ${index % 2 === 0 ? "mr-auto" : ""
+                  }`}
               >
                 <Link href={`/post/${doc.date}`}>
                   {doc.img && (
@@ -112,7 +80,7 @@ export default function NewsFetch() {
                   <p className="ma0 f6">{doc.date}</p>
                   <div className=" center bg_5ff  glow ma0 mt2">
                     <p className="z-0 ff5 f6-l f6-m pv3 b  w-100 center ma0 ">
-                      {"LEARN MORE >>"} 
+                      {"LEARN MORE >>"}
                     </p>
                   </div>
                 </Link>
