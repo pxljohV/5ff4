@@ -1,4 +1,5 @@
 import React from "react";
+import { Check } from "./firebaseConfig";
 import bg from "./assets/bg-3.gif";
 import twitter_icon from "./assets/twitter-icon.gif";
 import instagram_icon from "./assets/instagram-icon.gif";
@@ -10,6 +11,9 @@ import cocoapebbles from "./assets/cocoapebbles.gif";
 import Image from "next/image";
 import { useEffect } from "react";
 import Link from "next/link";
+
+const emailRef = React.createRef();
+
 export default function EmailList() {
   return (
     <div className=" bg-blue ma0  relative emailBg pv6-ns pv4 ">
@@ -23,7 +27,7 @@ export default function EmailList() {
         </div>
         <div className="flex justify-center flex-wrap items-center tc  w-100 mw7-l mw7 ph1-l ph3 mt6-l   shadow-text ">
           <div className="subscribe_input w-80-l  center w-90  email-box ">
-            <form className="tc pv4-l w-100   ">
+            <form className="tc pv4-l w-100 ">
               <h2 className="f1-ns f2 w-100  ma0 tc ">STAY UPDATED</h2>
               <p>Join the mailing list</p>
               <input
@@ -32,10 +36,17 @@ export default function EmailList() {
                 className="pa3-ns pa2 w-100 mw7  bg-white-90 color black-80 f4  "
                 required
                 style={{ outline: "none" }}
+                ref={emailRef}
               />
               <button
                 type="submit"
                 className="w-100 mw7  pa3 bg-purple pointer hover-bg-light-purple white"
+                onClick={(e) => {
+                  e.preventDefault();
+                  alert("Thank you for subscribing. You have joined the mailing list!")
+                  Check(emailRef.current.value)
+                  emailRef.current.value = " "
+                }}
               >
                 Subscribe
               </button>
@@ -45,7 +56,7 @@ export default function EmailList() {
             <div className=" w-100">
               <h3 className="f1-ns f2 w-100 ma0 mt3-l mt4-m mt3">FOLLOW US</h3>
             </div>
-            <div className=" w-100  ma0 mt2" style={{width:"320px"}}>
+            <div className=" w-100  ma0 mt2" style={{ width: "320px" }}>
               <div className="social flex  justify-around items-center w-100 ma0 mt3 ">
                 <div className="twitter img-shadow ">
                   <Link
