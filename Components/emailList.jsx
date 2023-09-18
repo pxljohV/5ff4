@@ -27,7 +27,12 @@ export default function EmailList() {
         </div>
         <div className="flex justify-center flex-wrap items-center tc  w-100 mw7-l mw7 ph1-l ph3 mt6-l   shadow-text ">
           <div className="subscribe_input w-80-l  center w-90  email-box ">
-            <form className="tc pv4-l w-100 ">
+            <form className="tc pv4-l w-100 " onSubmit={(e) => {
+              e.preventDefault();
+              alert("Thank you for subscribing. You have joined the mailing list!")
+              Check(emailRef.current.value)
+              emailRef.current.value = " "
+            }}>
               <h2 className="f1-ns f2 w-100  ma0 tc ">STAY UPDATED</h2>
               <p>Join the mailing list</p>
               <input
@@ -41,12 +46,6 @@ export default function EmailList() {
               <button
                 type="submit"
                 className="w-100 mw7  pa3 bg-purple pointer hover-bg-light-purple white"
-                onClick={(e) => {
-                  e.preventDefault();
-                  alert("Thank you for subscribing. You have joined the mailing list!")
-                  Check(emailRef.current.value)
-                  emailRef.current.value = " "
-                }}
               >
                 Subscribe
               </button>
