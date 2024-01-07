@@ -11,7 +11,7 @@ export default function MainTop() {
 
 
   return (
-    <div className= "w-100  mt5-m  ">
+    <div className="w-100  mt5-m  ">
       <div className="container relative pv5">
         <div className="  vh-100-l vh-75 ">
           <Image
@@ -26,15 +26,15 @@ export default function MainTop() {
         </div>
       </div>
       <div className="main-container w-100  z-1 absolute  white">
-        <div className="btn w-100 " style={{letterSpacing:"-2px"}}>
+        <div className="btn w-100 " style={{ letterSpacing: "-2px" }}>
           <h1 className="w-100 center tc f-headline-ns f1 ma0 shadow-text mt0-ns mt4 mt4-m ">
             5 F<span className="f-subheadline-ns f2">ORCE</span> F
             <span className="f-subheadline-ns f2">IGHTERS</span>
           </h1>
           <div className="w-100 flex mt4 ">
             <div className="w-80  mw6 tc  center">
-              <Link href="https://store.steampowered.com/app/1599170/5_Force_Fighters/"  rel="noopener noreferrer"
-                    target="_blank">
+              <Link href="https://store.steampowered.com/app/1599170/5_Force_Fighters/" rel="noopener noreferrer"
+                target="_blank">
                 <button
                   className={`white  b--white  center tc f1-ns f3 br2 bg_5ff pa4-ns pa3 w7 w-100 mt3-ns pointer grow ba bw1`}
                 >
@@ -45,8 +45,7 @@ export default function MainTop() {
           </div>
           <div className="b--red mw7 ph3 mh3 ">
             <div
-              className="ma0-ns mt5-ns mt4-m shadow-text red-border  w-100  "
-             
+              className="ma0-ns mt5-ns mt4-m shadow-text red-border  w-100  ph1 "
             >
               <Image
                 src={platforms}

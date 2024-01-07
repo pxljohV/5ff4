@@ -29,15 +29,13 @@ export default function PressKit() {
           style={{ top: "10%", left: "50%", transform: "translateX(-50%)" }}
         >
           <div className="w-100 ">
-            <h2 className="w-100 ph4 f1">Content</h2>
+            <h2 className="w-100 ph4 ph0-ns f1">|Content</h2>
           </div>
 
           <div
-            className="w-100 flex justify-between items-center flex-wrap-reverse"
-          
-          >
-            <div className={`w-40-l w-100 white flex`}>
-              <h3 className="w-100 f4-ns f4-m f5 ph4 lh-2">
+            className="w-100 flex justify-between items-center flex-wrap-reverse ph4 ph0-m ph0-l ">
+            <div className={`w-40-l w-100 white flex `}>
+              <h3 className="w-100 f4-ns f4-m f5">
                 5 Force Fighters, is a fighting game like no other! Where
                 burning meter raises your focus and the true force of each
                 distinct fighter. The simple inputs are balanced effortlessly
@@ -47,7 +45,7 @@ export default function PressKit() {
                 Sangre.
               </h3>
             </div>
-            <div className="container w-50-l w-100 ph4 ph0-ns" style={{ marginTop: "" }}>
+            <div className="container w-50-l w-100 ph1-m  ph0-ns" style={{ marginTop: "-7%" }}>
               <p className="white underline">Press Kit</p>
               <div className={"relative  bg-black flex items-center "}>
                 {url && (

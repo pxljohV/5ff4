@@ -9,7 +9,6 @@ import facebook_icon from "./assets/facebook-icon.gif";
 import discord_icon from "./assets/discord-icon.gif";
 import cocoapebbles from "./assets/cocoapebbles.gif";
 import Image from "next/image";
-import { useEffect } from "react";
 import Link from "next/link";
 
 const emailRef = React.createRef();
@@ -31,7 +30,7 @@ export default function EmailList() {
               e.preventDefault();
               alert("Thank you for subscribing. You have joined the mailing list!")
               Check(emailRef.current.value)
-              emailRef.current.value = " "
+              emailRef.current.value = ""
             }}>
               <h2 className="f1-ns f2 w-100  ma0 tc ">STAY UPDATED</h2>
               <p>Join the mailing list</p>

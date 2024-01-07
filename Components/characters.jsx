@@ -80,21 +80,9 @@ export default function Characters() {
   return (
     <div className="ma0  ph4 pv4 white ">
       <div className="ma0 ">
-        <h2 className="ma0 f1 white">Your Rider</h2>
+        <h2 className="ma0 f1 white">|Your Rider</h2>
         <div className=" black w-100 pv4 flex justify-center">
-          <div className="absolute  o-30 ">
-            <Image
-              src={background}
-              alt="5 force fighters banner"
-              w
-              quality={100}
-              style={{
-                width: "100%",
-                height: "auto",
-                display: "cover",
-              }}
-            />
-          </div>
+        
 
           <div
             className="  f2-ns f3-m f4 shadow-text relative white"
@@ -109,9 +97,8 @@ export default function Characters() {
                       id={index}
                       onClick={getDesc}
                       ref={refsArray[index]}
-                      className={`center flex justify-center items-end  b--white-10 br2 w-30 grow ${
-                        index === 0 ? "bg-white-10 ba" : ""
-                      }`}
+                      className={`center flex justify-center items-end  b--white-10 br2 w-30 grow ${index === 0 ? "bg-white-10 ba" : ""
+                        }`}
                     >
                       <div
                         className={
@@ -120,7 +107,7 @@ export default function Characters() {
                       >
                         <div
                           className=" ba flex items-center bg-black-50 w-100-m "
-                          style={{minHeight:"80px",  height: "auto" }}
+                          style={{ minHeight: "80px", height: "auto" }}
                         >
                           <Image
                             src={r.icon}

@@ -21,10 +21,10 @@ export default function Features() {
     setDescription(chars[e.currentTarget.id].desc);
   }
   return (
-    <div className=" relative white">
-      <h2 className="ma0 f1 mb4 ph4">Features</h2>
+    <div className=" relative white ">
+      <h2 className="ma0 f1 mb4 ph4 pv2 bl b--white">|Features</h2>
       <div className="container relative ">
-        <div className="">
+        <div className="o-30">
           <Image
             src={bg}
             alt="5 force fighters banner"
@@ -51,7 +51,7 @@ export default function Features() {
               </div>
             </div>
             <div className="w-50-l w-100 ph4-l ">
-              <h4 className="f2-ns f3 ma0">Full Force Links</h4>
+              <h4 className="f2-ns f3 ma0 underline">Full Force Links</h4>
               <p className="">
                 5 Force Fighters’ “Full Force Links” system ties all its
                 mechanics seamlessly. The ability to increase your character’s
@@ -65,7 +65,7 @@ export default function Features() {
           </div>
           <div className="fl ph4 black w-50 tl  b--white flex w-100 flex items-center flex-wrap-reverse white bg-black-40">
             <div className="w-100 w-50-l w-100 ph4-l ">
-              <h4 className="f2-ns f3 ma0 ">Rollback netcode</h4>
+              <h4 className="f2-ns f3 ma0 underline">Rollback netcode</h4>
               <p className=" white  ">
                 Throw hands near or far With the capabilities of rollback
                 netcode you will be able to play 5 Force Fighters against your
@@ -107,7 +107,7 @@ export default function Features() {
               />
             </div>
             <div className="w-50-l w-100 ph4-l ">
-              <h4 className="f2-l f3 ma0 ">A compeling story</h4>
+              <h4 className="f2-l f3 ma0 underline">A compeling story</h4>
               <p className="">
                 A compelling story Gifted or cursed with pain and new powers, 5
                 teens find their paths converging — propelled by trauma,
