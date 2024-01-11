@@ -28,7 +28,7 @@ export default function Home({ data }) {
     <div className="">
       <Head className="ma0 pa0 mb0">
         <title>5 FORCE FIGHTERS</title>
-        <meta name="description" content="5 Force Fighters Videogame Site" />
+        <meta name="description" content="5 Force Fighters" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
