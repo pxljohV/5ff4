@@ -31,7 +31,7 @@ export default function Home({ data }) {
         <meta name="description" content="5 Force Fighters Videogame Site" />
         <meta property="og:title" content="5 Force Fighters - Unleash the Power in this Unique Fighting Game">
         <meta property="og:description" content="Experience the unparalleled intensity of 5 Force Fighters, where the burning meter amplifies focus and unleashes the true force of each fighter. Immerse yourself in a captivating interactive story as the 5 protagonists embrace the extraordinary powers of the 5-Force. Join them on their quest to reach Corvegas and triumph over the formidable Ken D. Sangre. Get ready to unleash your skills and dominate in this one-of-a-kind fighting game.">
-        <meta property="og:image" content="https://5forcefighters.com/_ipx/w_1080,q_75/%2F_next%2Fstatic%2Fmedia%2Fcocoapebbles.f2b5e2d5.gif?url=%2F_next%2Fstatic%2Fmedia%2Fcocoapebbles.f2b5e2d5.gif&w=1080&q=75">
+        <meta property="og:image" content="">
         <meta property="og:url" content="https://5forcefighters.com">
         <meta property="og:type" content="website">
         <link rel="icon" href="/favicon.ico" />
