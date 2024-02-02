@@ -66,6 +66,11 @@ export default function Characters() {
     setDescription(chars[e.currentTarget.id].desc);
     setBackground(chars[e.currentTarget.id].bg);
     setCurrentChar(chars[e.currentTarget.id].icon);
+
+    useEffect(()=>{
+      //
+    },[description, name, currentChar])
+    
     refsArray.forEach((r) => {
       if (r.current.classList.contains("ba", "bg-white-10")) {
         r.current.classList.remove("ba", "bg-white-10");
