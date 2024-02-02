@@ -80,10 +80,6 @@ export default function Characters() {
 
     e.currentTarget.classList.add("ba", "bg-white-10");
   }
-
-    useEffect(()=>{
-      //
-    },[setName])
   return (
     <div className="ma0  ph4 pv4 white ">
       <div className="ma0 ">
