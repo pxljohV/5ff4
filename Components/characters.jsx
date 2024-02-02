@@ -67,9 +67,7 @@ export default function Characters() {
     setBackground(chars[e.currentTarget.id].bg);
     setCurrentChar(chars[e.currentTarget.id].icon);
 
-    useEffect(()=>{
-      //
-    },[description, name, currentChar])
+  
     
     refsArray.forEach((r) => {
       if (r.current.classList.contains("ba", "bg-white-10")) {
@@ -82,6 +80,10 @@ export default function Characters() {
 
     e.currentTarget.classList.add("ba", "bg-white-10");
   }
+
+    useEffect(()=>{
+      //
+    },[setName])
   return (
     <div className="ma0  ph4 pv4 white ">
       <div className="ma0 ">
