@@ -91,14 +91,12 @@ export default function Characters() {
   ]);
 
 
-  const [currentChar, setCurrentChar] = useState(0);
-
+  let [currentChar, setCurrentChar] = useState(0);
 
   function getDesc(e) {
-    
-    console.log( e.currentTarget.id);
     setCurrentChar(e.currentTarget.id)
-   
+    console.log(currentChar.name);
+
     refsArray.forEach((r) => {
       if (r.current.classList.contains("ba", "bg-white-10")) {
         r.current.classList.remove("ba", "bg-white-10");
@@ -128,7 +126,9 @@ export default function Characters() {
                     <div
                       key={index}
                       id={index}
-                      onClick={getDesc}
+                      onClick={(e) => {
+                        getDesc(e)
+                      }}
                       ref={refsArray[index]}
                       className={`center flex justify-center items-end  b--white-10 br2 w-30 grow ${index === 0 ? "bg-white-10 ba" : ""
                         }`}
@@ -163,21 +163,43 @@ export default function Characters() {
 
               <div className="w-100 flex flex-wrap items-center bg-black">
                 <div className=" w-50-l  w-100 bg-black-70 pa4-l ">
-                  {
-                    chars[currentChar].bg
-                  }
+
+                  <div id={0} style={{ display: currentChar == 0 ? 'block' : 'none' }}>
+                    {chars[0].bg}
+                  </div>
+
+                  <div id={1} style={{ display: currentChar == 1 ? 'block' : 'none' }}>
+                    {chars[1].bg}
+                  </div>
+
+                  <div id={2} style={{ display: currentChar == 2 ? 'block' : 'none' }}>
+                    {chars[2].bg}
+                  </div>
+
+                  <div id={3} style={{ display: currentChar == 3 ? 'block' : 'none' }}>
+                    {chars[3].bg}
+                  </div>
+
+                  <div id={4} style={{ display: currentChar == 4 ? 'block' : 'none' }}>
+                    {chars[4].bg}
+                  </div>
                 </div>
+
+
                 <div className="w-50-l w-100 pa4-l lh-2 bg-black-70   ">
                   <p className="f3-l f4-m f5 ">
                     <span className="pink b">{chars[currentChar].name}</span>
-                    { chars[currentChar].desc}
+                    {chars[currentChar].desc}
                   </p>
                 </div>
+
               </div>
+
             </div>
           </div>
         </div>
       </div>
     </div>
+
   );
 }
